@@ -8,11 +8,11 @@ download_path = "PrecosCombustiveis"
 for filename in os.listdir(download_path):
     file_path = os.path.join(download_path, filename)
 
-    # Se o arquivo não começa com "ca", remove
-    if not filename.lower().startswith("ca"):
-        print(f"Removendo arquivo inválido: {filename}")
-        os.remove(file_path)
-        continue  # Pular para o próximo arquivo
+    # # Se o arquivo não começa com "ca", remove
+    # if not filename.lower().startswith("ca"):
+    #     print(f"Removendo arquivo inválido: {filename}")
+    #     os.remove(file_path)
+    #     continue  # Pular para o próximo arquivo
 
     # Se for um arquivo ZIP, descompactar e excluir o ZIP
     if filename.lower().endswith(".zip"):

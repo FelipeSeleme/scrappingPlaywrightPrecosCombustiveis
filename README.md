@@ -1,4 +1,4 @@
-# 🚀 Web Scraper de Preços de Combustíveis
+# Web Scraper de Preços de Combustíveis
 
 Este projeto realiza **web scraping** de dados públicos sobre preços de combustíveis a partir do portal **[dados.gov.br](https://dados.gov.br/)**.  
 Os dados são baixados automaticamente e processados para manter apenas arquivos relevantes.
@@ -9,13 +9,16 @@ Os dados são baixados automaticamente e processados para manter apenas arquivos
 📦 PrecosCombustiveis/ # Pasta onde os arquivos baixados são armazenados 
 ├── scrapper.py # Script para coletar os arquivos do site 
 ├── processamento.py # Script para organizar e processar os arquivos baixados 
+├── pytest/ # Pasta para testes unitários
+│   └── test_scraper.py # Testes unitários para o scrapper.py
+├── pytest.ini # Configurações do pytest
 ├── requirements.txt # Lista de dependências do projeto 
 └── README.md # Documentação do projeto
 ```
 
 ---
 
-## 🛠️ **Pré-requisitos**
+## **Pré-requisitos**
 Certifique-se de ter o **Python 3.8+** instalado em seu sistema.  
 
 ### 🔹 Instalando as dependências  
@@ -29,7 +32,7 @@ Caso o Playwright seja necessário, execute também:
 playwright install
 ```
 
-### 📌 Uso
+### Uso
 #### 1️⃣ Executar o Scraper
 
 Para baixar os arquivos diretamente do site:
@@ -57,9 +60,17 @@ O script processamento.py irá:
 ✅ Descompactar arquivos ZIP na pasta correta  
 ✅ Excluir os arquivos ZIP após a extração  
 
-### 🔧 Personalização
+#### 3️⃣ Executar os Testes
+
+Para executar os testes unitários:
+
+```bash
+pytest
+```
+
+### Personalização
 
 Se quiser modificar o comportamento do scraper ou do processamento, edite os arquivos scrapper.py e processamento.py conforme necessário.
-🤝 Contribuição
+Contribuição
 
 Sinta-se à vontade para sugerir melhorias ou reportar problemas abrindo uma issue ou enviando um pull request.

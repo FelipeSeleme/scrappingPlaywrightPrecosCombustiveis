@@ -67,6 +67,10 @@ Para executar os testes unitários:
 ```bash
 pytest
 ```
+##### Conferindo os testes com Playwright show-trace:
+
+![Resultado dos testes](assets/playwright_show_trace.png)
+
 
 ### Personalização
 
